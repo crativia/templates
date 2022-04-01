@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA6BE;AAGF,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,oBAAoB;CACpC;;AAED,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,KAAK;EACvB,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;CACzB;;ACrCI,AAAD,eAAY,CAAA;EACR,KAAK,EAAE,KAAK;CACf;;AAGA,AAAD,cAAW,CAAA;EACP,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;CACrB;;AAGA,AAAD,gBAAa,CAAA;EACT,WAAW,EAAE,GAAG;CAInB;;AALA,AAEG,gBAFS,GAEP,IAAI,CAAA;EACF,WAAW,EAAE,GAAG;CACnB;;AAIJ,AAAD,cAAW,CAAA;EACP,WAAW,EAAE,GAAG;CACnB;;ACxBL,qBAAqB;AAErB,AAEI,IAFA,GAEE,MAAM,CAAC;EAGL,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;CAEzB;;ACVL,kBAAkB;AAGlB,AAGI,IAHA,GAGE,IAAI,CAAC;EAEH,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;CAEzB;;ACXL,qBAAqB;AAErB,AAEI,IAFA,GAEE,MAAM,CAAA;EACJ,gBAAgB,EAAe,kBAAO;CACzC",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/includes/_utilities.scss",
+        "../scss/includes/_header.scss",
+        "../scss/includes/_main.scss",
+        "../scss/includes/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

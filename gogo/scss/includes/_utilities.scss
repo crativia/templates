@@ -1,0 +1,27 @@
+.wcr{
+
+    // apply white color to text
+    &-text-white{
+        color: white;
+    }
+
+    // apply lead text style
+    &-text-lead{
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    // apply header text style
+    &-text-header{
+        font-weight: 100;
+        > span{
+            font-weight: 900;
+        }
+    }
+
+    // apply bold style to font
+    &-text-bold{
+        font-weight: 900;
+    }
+
+}
