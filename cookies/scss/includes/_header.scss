@@ -1,0 +1,33 @@
+/** Header Styles **/
+
+body {
+
+    > header {
+        
+        min-height: 50vh;
+
+        @media (min-width: 767px) {
+
+            min-height: 100vh;
+
+        }
+
+        &::before{
+            content: "";
+            background-repeat: no-repeat;
+            background-size: cover;
+            // https://bennettfeely.com/clippy/
+            clip-path: polygon(0 0, 100% 0%, 100% 60%, 0 100%);
+            position: absolute;
+            min-height: inherit;
+            height: inherit;
+            width: 100%;
+            background-image: url("../../img/header-1.jpg");
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+    }
+
+}

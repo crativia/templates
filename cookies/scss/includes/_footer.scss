@@ -1,0 +1,19 @@
+@import "./vars";
+
+/** Footer Styles **/
+
+body{
+
+    > footer{
+
+        background-color: $primary-color;
+
+        .col-md-6{
+            > p{
+                max-width: 400px;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,49 @@
+@import "./vars";
+
+/** Utilities **/
+
+.wcr{
+
+    // heading font style
+    &-headings{
+
+        font-weight: 700;
+        line-height: 1;
+
+        > small{
+            font-size: 0.5em;
+            font-weight: 400;
+            display: block;
+            clear: both;
+        }
+    }
+
+    // apply white to text color
+    &-text-white{
+        color: white;
+    }
+
+    // button size fix
+    &-btn-size{
+        min-width: 40px;
+    }
+
+    // apply btn bg color
+    &-btn-color{
+        background-color: $primary-color;
+        color: white;
+        border: none;
+    }
+
+    // apply black font-weight
+    &-text-black{
+        font-weight: 900;
+    }
+
+    // apply line style
+    &-line{
+        height: 4px !important;
+        opacity: 1;
+        background-color: white;
+    }
+}
