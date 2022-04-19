@@ -1,0 +1,311 @@
+/**
+* Crativia (Pty) Ltd - Mask - Free Template
+* MIT License
+* 
+* Copyright (c) 2022 Crativia
+* 
+* Permission is hereby granted, free of charge, to any person obtaining a copy
+* of this software and associated documentation files (the "Software"), to deal
+* in the Software without restriction, including without limitation the rights
+* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+* copies of the Software, and to permit persons to whom the Software is
+* furnished to do so, subject to the following conditions:
+* 
+* The above copyright notice and this permission notice shall be included in all
+* copies or substantial portions of the Software.
+* 
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+* SOFTWARE.
+*
+* Table of Contents
+* 1. Utilities
+* 2. Header Styles
+* 3. Main Styles
+* 4. Footer Styles
+*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/** Utils **/
+.wcr-text-primary {
+  color: #0056bc;
+}
+
+.wcr-btn-secondary {
+  color: white;
+  border: none;
+  font-weight: 700;
+  background-color: #f26522;
+}
+
+.wcr-logo {
+  font-weight: 900;
+  color: #0056bc;
+}
+
+.wcr-logo > small {
+  display: block;
+  clear: both;
+  font-weight: 400;
+}
+
+.wcr-text-bolder {
+  font-weight: 900;
+}
+
+.wcr-line {
+  width: 80px;
+  margin: 1rem 0;
+  opacity: 1;
+  border: 2px solid #0056bc;
+  background-color: #0056bc;
+}
+
+.wcr-links {
+  color: #0056bc;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+.wcr-bg-primary {
+  background-color: rgba(0, 86, 188, 0.6);
+}
+
+/** Header Styles **/
+@media (min-width: 1023px) {
+  body > header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../img/bg-top-1.png);
+    background-position-x: right;
+    z-index: -1;
+  }
+}
+
+body > header h6 {
+  font-size: .8rem;
+}
+
+body > header p {
+  max-width: 410px;
+}
+
+/** Main Styles **/
+.wcr-how-to {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 1023px) {
+  .wcr-how-to {
+    margin-bottom: 10rem;
+  }
+  .wcr-how-to::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../img/bg-content-1.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 767px) {
+  .wcr-how-to::before {
+    background-position: center;
+  }
+}
+
+.wcr-card {
+  width: 235px;
+  height: 235px;
+  background-color: white;
+}
+
+.wcr-card > img {
+  width: 75px;
+  height: 65px;
+}
+
+.wcr-card > h4 {
+  font-weight: 700;
+  color: #0056bc;
+}
+
+.wcr-card > p {
+  max-width: 200px;
+  font-size: 0.8rem;
+}
+
+.wcr-fabrics {
+  margin: 5rem 0;
+}
+
+@media (min-width: 1023px) {
+  .wcr-fabrics {
+    margin: 0;
+    padding: 10rem 0;
+  }
+  .wcr-fabrics::before {
+    content: "";
+    background-image: url(../../img/bg-content-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .wcr-fabrics::after {
+    content: "";
+    background-image: url(../../img/deatil-1.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -17%;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.wcr-fashion {
+  margin: 5rem 0;
+}
+
+@media (min-width: 1023px) {
+  .wcr-fashion {
+    margin: 0;
+    padding: 10rem 0;
+  }
+  .wcr-fashion::before {
+    content: "";
+    background-image: url(../../img/detail-2.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.wcr-contact .wcr-contact-card {
+  width: 290px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wcr-contact .wcr-contact-card .fa-solid {
+  padding: 1.5rem 1rem;
+}
+
+.wcr-contact .wcr-contact-card * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1023px) {
+  .wcr-contact::before {
+    content: "";
+    background-image: url(../../img/detail-4.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -70%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.wcr-signup {
+  margin: 5rem 0;
+}
+
+@media (min-width: 1023px) {
+  .wcr-signup {
+    margin: 10rem 0;
+  }
+}
+
+.wcr-signup .wcr-form > input:active, .wcr-signup .wcr-form > input:focus, .wcr-signup .wcr-form > input:focus-visible {
+  border: none !important;
+  outline: none;
+}
+
+/** Footer Styles **/
+body > footer {
+  padding-bottom: 10rem;
+}
+
+body > footer .wcr-desc {
+  max-width: 370px;
+}
+
+@media (min-width: 1023px) {
+  body > footer::after {
+    content: "";
+    background-image: url(../../img/bg-content-3.png);
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+body > footer::before {
+  content: "";
+  background-image: url(../../img/detail-3.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */

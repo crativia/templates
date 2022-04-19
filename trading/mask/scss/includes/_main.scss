@@ -1,0 +1,170 @@
+/** Main Styles **/
+
+.wcr-how-to {
+    margin-bottom: 5rem;
+
+    @media (min-width: 1023px) {
+        margin-bottom: 10rem;
+        &::before {
+            content: "";
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(../../img/bg-content-1.png);
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            @media (max-width: 767px) {
+                background-position: center;
+            }
+        }
+    }
+
+}
+
+.wcr-card {
+    width: 235px;
+    height: 235px;
+    background-color: white;
+
+    > img {
+        width: 75px;
+        height: 65px;
+    }
+    > h4 {
+        font-weight: 700;
+        color: $primary-color;
+    }
+    > p {
+        max-width: 200px;
+        font-size: 0.8rem;
+    }
+}
+
+.wcr-fabrics {
+
+    margin: 5rem 0;
+
+    @media (min-width: 1023px) {
+
+        margin: 0;
+        padding: 10rem 0;
+
+        &::before {
+            content: "";
+            background-image: url(../../img/bg-content-2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &::after {
+            content: "";
+            background-image: url(../../img/deatil-1.jpg);
+            background-repeat: no-repeat;
+            background-position: right top;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: -17%;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+}
+
+.wcr-fashion {
+
+    margin: 5rem 0;
+
+    @media (min-width: 1023px) {
+    
+        margin: 0;
+        padding: 10rem 0;
+
+        &::before{
+            content: "";
+            background-image: url(../../img/detail-2.png);
+            background-position: right top;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: -20%;
+            right: 0;
+            z-index: -1;
+        }
+        
+    }
+
+}
+
+.wcr-contact{
+
+    .wcr-contact-card{
+
+        width: 290px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+
+        .fa-solid{
+            padding: 1.5rem 1rem;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+    }
+
+    @media (min-width: 1023px) {
+        &::before{
+            content: "";
+            background-image: url(../../img/detail-4.jpg);
+            background-position: left top;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -70%;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        
+    }
+
+
+}
+
+.wcr-signup{
+
+    margin: 5rem 0;
+
+    @media (min-width: 1023px) {
+        margin: 10rem 0;
+    }
+
+    .wcr-form{
+        > input{
+
+            &:active, &:focus, &:focus-visible{
+                border: none !important;
+                outline: none;
+            }
+
+        }
+    }
+
+}

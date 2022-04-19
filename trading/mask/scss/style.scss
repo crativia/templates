@@ -1,5 +1,5 @@
 /**
-* Crativia (Pty) Ltd - Cookies - Free Template
+* Crativia (Pty) Ltd - Mask - Free Template
 * MIT License
 * 
 * Copyright (c) 2022 Crativia
@@ -25,8 +25,7 @@
 * Table of Contents
 * 1. Utilities
 * 2. Header Styles
-* 3. Order Styles
-* 4. Main Styles
+* 3. Main Styles
 * 4. Footer Styles
 */
 
@@ -34,20 +33,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-@import "./includes/vars";
 @import "./includes/utilities";
 @import "./includes/header";
-@import "./includes/orders";
 @import "./includes/main";
 @import "./includes/footer";
-
-.form-check-input:checked {
-    background-color: $primary-color;
-    border-color: $primary-color;
-}
-
-.form-check-input:focus {
-    border-color: $primary-color;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba($color: $primary-color, $alpha: 0.25);
-}
