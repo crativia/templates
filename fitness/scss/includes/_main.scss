@@ -1,0 +1,79 @@
+@import "./vars";
+
+/** Sections Styles **/
+body {
+    > main{
+
+        .wcr{
+
+            &-logo-border{
+                @media (min-width: 1023px) {
+                    border-right: 4px solid white;
+                }
+            }
+
+            &-guides{
+    
+                padding: 3rem 0;
+                background-color: #f1f2f2;
+    
+                @media (min-width: 767px) {
+                    padding: 8rem 0;                
+                }
+    
+            }
+
+            &-meals{
+            
+                padding: 8rem 0;
+                background-image: url(../../img/bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+    
+                .wcr-info-card{
+                    width: 100%;
+                    background-color: rgba($color: $primary-color, $alpha: .9);
+                }
+    
+            }
+
+            &-signup{
+    
+                @media (min-width: 767px) {
+                    background-image: url(../../img/banner.jpg);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    background-size: 60% 100%;
+                }
+
+                @media (min-width: 1999px) {
+                    background-size: 50% 100%;
+                }
+    
+                .wcr-signup-action{
+                    @media (min-width: 767px) {
+                        min-height: 672px;
+                    }
+                    @media (min-width: 1999px) {
+                        min-height: 800px;
+                    }
+                }
+            }
+            
+            &-contact{
+    
+                padding: 8rem 0;
+                background-image: url(../../img/bg-1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+    
+                .container{
+                    background-color: rgba($color: #414042, $alpha: .9);
+                }
+            }
+            
+        }
+
+    }
+}

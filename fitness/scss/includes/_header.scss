@@ -1,45 +1,40 @@
 /** Hedaer Styles **/
 
-body{
-    &::after{
-        top: 0;
-        left: 0;
-        content: "";
-        width: 100%;
-        height: 450px;
-        position: absolute;
-        z-index: -100;
-        background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(107, 180, 37, 1) 100%);
-        background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(107, 180, 37, 1) 100%);
-        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(107, 180, 37, 1) 100%);
+body {
+    > header {
+
+        background-size: cover;
+        background-position: right center;
+        background-image: url(../../img/header-bg.jpg);
+        background-repeat: no-repeat;
+
+        @media (min-width: 767px) {
+            background-size: cover;
+            background-position: center center;
+        }
     }
-}
 
-header {
-    
-    position: relative;
-
-    > section{
-        z-index: 200;
+    .wcr-intro-text {
+        margin-bottom: 4rem;
+        @media (min-width: 767px) {
+            margin-top: 6rem;
+            margin-bottom: 0;
+        }
+        @media (min-width: 1023px) {
+            margin-top: 10rem;
+        }
     }
-    .wcr {
 
-        &-intro-block {
-            > h1 {
-                font-weight: 900;
-            }
-            > p{
-                @media (min-width: 992px) {
-                    max-width: 400px;
-                }
-            }
-            .btn{
-                padding: 1rem 1.5rem;
-                @media (min-width: 992px) {
-                    font-size: 28px;
-                    padding: 1.2rem 2rem;
-                }
-            }
+    .wcr-products{
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        > img{
+            position: absolute;
         }
 
     }
