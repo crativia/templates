@@ -25,12 +25,15 @@
 * Table of Contents
 * 1. Utilities
 * 2. Header Styles
-* 3. Footer Styles
-* 4. Sections Styles
+* 3. Main Styles
+* 4. Footer Styles
 */
 
+*{
+    font-family: Roboto, serif
+}
 
 @import "./includes/utils";
 @import "./includes/header";
+@import "./includes/main";
 @import "./includes/footer";
-@import "./includes/sections";

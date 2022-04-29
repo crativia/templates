@@ -25,127 +25,160 @@
 * Table of Contents
 * 1. Utilities
 * 2. Header Styles
-* 3. Footer Styles
-* 4. Sections Styles
+* 3. Main Styles
+* 4. Footer Styles
 */
-/** Utilities **/
+* {
+  font-family: Roboto, serif;
+}
+
 .wcr-text-primary {
-  color: #6BB425;
+  color: #1c9b0e;
 }
 
-.wcr-text-secondary {
-  color: #786D51;
-}
-
-.wcr-text-white {
-  color: white;
-}
-
-.wcr-icon-primary {
-  color: #6BB425;
-}
-
-.wcr-icon-white {
-  color: white;
-}
-
-.wcr-btn-primary {
-  color: white;
-  background-color: #6BB425;
-}
-
-.wcr-btn-secondary {
-  color: white;
-  background-color: #786D51;
-}
-
-.wcr-shape-primary {
-  background-color: #6BB425;
-}
-
-.wcr-shape-secondary {
-  background-color: #786D51;
-}
-
-.wcr-img-border {
-  border: 25px solid #6BB425;
-}
-
-.wcr-shape-color-primary {
-  background-color: #6BB425;
-}
-
-.wcr-shape-color-secondary {
-  background-color: #786D51;
-}
-
-/** Hedaer Styles **/
-body::after {
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 450px;
-  position: absolute;
-  z-index: -100;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), to(#6bb425));
-  background: linear-gradient(0deg, white 0%, #6bb425 100%);
-}
-
-header {
-  position: relative;
-}
-
-header > section {
-  z-index: 200;
-}
-
-header .wcr-intro-block > h1 {
+.wcr-text-bolder {
   font-weight: 900;
 }
 
-@media (min-width: 992px) {
-  header .wcr-intro-block > p {
-    max-width: 400px;
+.wcr-bg-primary {
+  background-color: #1c9b0e;
+}
+
+.wcr-logo {
+  font-weight: 900;
+}
+
+.wcr-logo > small {
+  font-weight: 300;
+  display: block;
+  clear: both;
+  font-size: .6em;
+}
+
+/** Hedaer Styles **/
+body > header {
+  background-size: cover;
+  background-position: right center;
+  background-image: url(../../img/header-bg.jpg);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 767px) {
+  body > header {
+    background-size: cover;
+    background-position: center center;
   }
 }
 
-header .wcr-intro-block .btn {
-  padding: 1rem 1.5rem;
+body .wcr-intro-text {
+  margin-bottom: 4rem;
 }
 
-@media (min-width: 992px) {
-  header .wcr-intro-block .btn {
-    font-size: 28px;
-    padding: 1.2rem 2rem;
+@media (min-width: 767px) {
+  body .wcr-intro-text {
+    margin-top: 6rem;
+    margin-bottom: 0;
   }
 }
 
-/** Footer Styles **/
-footer {
-  color: white;
-  background-color: #786D51;
+@media (min-width: 1023px) {
+  body .wcr-intro-text {
+    margin-top: 10rem;
+  }
+}
+
+body .wcr-products {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wcr-products > img {
+  position: absolute;
 }
 
 /** Sections Styles **/
-body > section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  position: relative;
-}
-
-@media (min-width: 992px) {
-  body > section {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+@media (min-width: 1023px) {
+  body > main .wcr-logo-border {
+    border-right: 4px solid white;
   }
 }
 
-body > section h4 {
-  font-size: 18px;
+body > main .wcr-guides {
+  padding: 3rem 0;
+  background-color: #f1f2f2;
 }
 
-body > section .btn {
-  font-size: 20px;
+@media (min-width: 767px) {
+  body > main .wcr-guides {
+    padding: 8rem 0;
+  }
+}
+
+body > main .wcr-meals {
+  padding: 8rem 0;
+  background-image: url(../../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body > main .wcr-meals .wcr-info-card {
+  width: 100%;
+  background-color: rgba(28, 155, 14, 0.9);
+}
+
+@media (min-width: 767px) {
+  body > main .wcr-signup {
+    background-image: url(../../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 60% 100%;
+  }
+}
+
+@media (min-width: 1999px) {
+  body > main .wcr-signup {
+    background-size: 50% 100%;
+  }
+}
+
+@media (min-width: 767px) {
+  body > main .wcr-signup .wcr-signup-action {
+    min-height: 672px;
+  }
+}
+
+@media (min-width: 1999px) {
+  body > main .wcr-signup .wcr-signup-action {
+    min-height: 800px;
+  }
+}
+
+body > main .wcr-contact {
+  padding: 8rem 0;
+  background-image: url(../../img/bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body > main .wcr-contact .container {
+  background-color: rgba(65, 64, 66, 0.9);
+}
+
+/** Footer Styles **/
+footer h5 {
+  font-size: .8rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,68 +1,33 @@
 @import "./vars";
 
-/** Utilities **/
-
 // base utils
 .wcr {
+    
     // apply primary color to text
     &-text-primary {
         color: $primary-color;
     }
 
-    // apply secondary color to text
-    &-text-secondary {
-        color: $secondary-color;
+    // apply bolder font weight
+    &-text-bolder{
+        font-weight: 900;
     }
 
-    // apply white color to text
-    &-text-white{
-        color: white;
-    }
-
-    // apply primary color to icons
-    &-icon-primary{
-        color: $primary-color;
-    }
-
-    // apply white color to icons
-    &-icon-white{
-        color: white;
-    }
-
-    // primary btn theme
-    &-btn-primary {
-        color: white;
+    // apply primary color to background
+    &-bg-primary{
         background-color: $primary-color;
     }
 
-    // secondary btn theme
-    &-btn-secondary {
-        color: white;
-        background-color: $secondary-color;
-    }
+    // logo style
+    &-logo{
+        
+        font-weight: 900;
 
-    // apply primary color to shape
-    &-shape-primary {
-        background-color: $primary-color;
-    }
-
-    // apply secondary color to shape
-    &-shape-secondary {
-        background-color: $secondary-color;
-    }
-
-    // apply border color to images
-    &-img-border{
-        border: 25px solid $primary-color;
-    }
-
-    // apply primary color to shape
-    &-shape-color-primary{
-        background-color: $primary-color;
-    }
-
-    // apply secondary color to shape
-    &-shape-color-secondary{
-        background-color: $secondary-color;
+        > small{
+            font-weight: 300;
+            display: block;
+            clear: both;
+            font-size: .6em;
+        }
     }
 }
